@@ -1,14 +1,19 @@
 // document.getElementById("count").innerText = 5;
 
-let lap1 = 34
-let lap2 = 33
-let lap3 = 36
+let lapsCompleted = 0;
 
-// Create function logs out sum of all laps
+// Create function that increments lapsCompleted
 
-function totalTime() {
-    let lapTotals = lap1 + lap2 + lap3;
-    console.log(lapTotals);
+function addLap() {
+    lapsCompleted++;
 }
 
-totalTime();
+addLap();
+addLap();
+addLap();
+
+console.log(lapsCompleted);
+
+// I keep forgetting to actually log to console
+// Spent way too long trying to figure out what I 
+// did wrong.
