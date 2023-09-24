@@ -8,5 +8,11 @@
 let count = 0;
 
 function increment() {
-    console.log("clicked")
+    count++;
+    document.getElementById("count-el").innerText = count;
+}
+
+function resetCount() {
+    count = 0;
+    document.getElementById("count-el").innerText = count;
 }

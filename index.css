@@ -32,3 +32,12 @@ h2 {
     border-radius: 6px;
     background-color: rgb(117, 175, 197);
 }
+
+#reset-btn {
+    margin-top: 120px;
+    height: 25px;
+    width: 100px;
+    border: none;
+    background-color: rgb(233, 171, 167);
+    color: black;
+}
