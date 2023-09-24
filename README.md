@@ -1,4 +1,7 @@
-Left off at 36:34
+Left off at 1:30?:36
+Somewhere close to that, it's saved somewhere, lol.  
+
+
 
 Going back to do a quick rehash just to log everything in GitHub
 
