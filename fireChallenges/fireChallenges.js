@@ -98,3 +98,5 @@ document.getElementById("num2-el").textContent = num2;
 {/* <button id="divide-btn" onclick="divide()"></button> */}
 {/* <p id="sum-el">Sum: </p> */}
 
+// I wanted to actually work the whole thing out, so I did it in its 
+// own folder calc_challenge
