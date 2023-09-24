@@ -21,3 +21,12 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#increment-btn {
+    height: 50px;
+    width: 200px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(117, 175, 197);
+}
