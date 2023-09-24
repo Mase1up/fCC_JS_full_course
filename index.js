@@ -1,11 +1,18 @@
 // document.getElementById("count").innerText = 5;
 
 
-let bonusPoints = 50;
-    console.log(bonusPoints);
-bonusPoints += 50;
-    console.log(bonusPoints);
-bonusPoints -= 75;
-    console.log(bonusPoints);
-bonusPoints += 45;
-    console.log(bonusPoints);
+// Setting up the race
+
+function countdown() {
+    console.log(5)
+    console.log(4)
+    console.log(3)
+    console.log(2)
+    console.log(1)
+}
+
+countdown();
+
+// Get another race ready...
+
+countdown();
