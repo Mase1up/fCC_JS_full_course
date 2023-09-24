@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background-color: rgb(41, 53, 58);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#increment-btn,
+#save-btn {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(161, 13, 13);
+    color: linen;
+}
+
+#save-btn {
+    background-color: rgb(120, 153, 120);
+    color: white;
+}
+
+#save-el {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
