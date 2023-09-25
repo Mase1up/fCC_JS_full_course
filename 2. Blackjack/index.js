@@ -27,6 +27,7 @@ let sum = firstCard + secondCard;
     // console.log(sum)
 let hasBlackjack = false;
 let isAlive = true;
+let message = "";
 // There we go!  I feel like I was supposed to find another way, because
 // at this stage we were not introduced to return...
 // but it works, and that makes me happy!
@@ -37,18 +38,23 @@ let isAlive = true;
 // let secondCard = 9;
 // let sum = firstCard + secondCard;
 
+// 1. Declare a var message and assign its value as empty string
+// 2. Reassign the message var to the string we're logging out
+
 if (sum <= 20) {
-    console.log("Do you want to Hit?");
+    message = "Do you want to Hit?";
 } else if (sum === 21) {
-    console.log("Blackjack!  Congratulations!");
+    message = "Blackjack!  Congratulations!";
     hasBlackjack = true;
 } else {
-    console.log("You busted, sorry!");
+    message = "You busted, sorry!";
     isAlive = false;
 }
 
-// CASH OUT!
-console.log(sum);
-console.log(hasBlackjack);
+// Log it out!
+console.log(message);
 
-// 1. Create var isAlive, set to true, and false if busts
+// // CASH OUT!
+// console.log(sum);
+// console.log(hasBlackjack);
+// console.log(isAlive)
