@@ -31,3 +31,9 @@ let sum = firstCard + secondCard;
 // at this stage we were not introduced to return...
 // but it works, and that makes me happy!
 
+// Omg, he meant just assign a value of MY CHOOSING between 2 - 11....LOL!
+// he went with:
+// let firstCard = 6;
+// let secondCard = 9;
+// let sum = firstCard + secondCard;
+
