@@ -28,6 +28,20 @@ return sum = firstCard + secondCard;
     // console.log(sum)
 }
 
+function dealFirstCard() {
+    dealCard();
+    return firstCard = card;
+}
+
+function dealSecondCard() {
+    dealCard();
+    return secondCard = card;
+}
+
+function handTotal() {
+    return sum = firstCard + secondCard;
+}
+
 let hasBlackjack = false;
 let isAlive = true;
 let message = "";
@@ -47,7 +61,9 @@ let message = "";
 
 function startGame() {
 
-    dealHand();
+    dealFirstCard();
+    dealSecondCard();
+    handTotal();
 
     if (sum <= 20) {
         message = "Do you want to Hit?";
@@ -58,6 +74,8 @@ function startGame() {
         message = "You busted, sorry!";
         isAlive = false;
     }
+    console.log(firstCard);
+    console.log(secondCard);
     console.log(sum);
     console.log(message);
 }
@@ -77,6 +95,22 @@ function startGame() {
 // a function inside another one.
 
 // First thing I realized I need to return the value of sum, so
-// changed let to return.
+// changed let to return.  Probably change firstCard seconCard also.
 
 // SUCCESS!!!!!
+
+// When I tried to return all 3, I get "sum not defined", I think
+// at the first return, the function stops and only returns a single value.
+// In that case function for the first card,
+// function for the second card,
+// function for the sum
+
+// function dealFirstCard(), function dealSecondCard(), 
+// function handValue()
+
+// This should let me simply call the functions when the Start Game
+// button is clicked.  At this point should I simply be hard-coding?
+// I'd rather use funcs for now, and sense that's the correct path anyway,
+// so for now I'm sticking to using functions.
+
+
