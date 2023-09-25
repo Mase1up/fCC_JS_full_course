@@ -13,10 +13,21 @@ let randomCard = Math.floor(Math.random() * ((11-2)+1)+2);
 // Not sure if I'll have to make it a functin and invoke it, I feel like this may give a
 // random card that then is repeated ad infinitum.
 
-let firstCard = randomCard;
+function dealCard() {
+    return card = Math.floor(Math.random() * ((11-2)+1)+2); 
+}
+
+dealCard();
+let firstCard = card;
     console.log(firstCard)
-let secondCard = randomCard;
+dealCard();
+let secondCard = card;
     console.log(secondCard)
 
 let sum = firstCard + secondCard;
     console.log(sum)
+
+// There we go!  I feel like I was supposed to find another way, because
+// at this stage we were not introduced to return...
+// but it works, and that makes me happy!
+
