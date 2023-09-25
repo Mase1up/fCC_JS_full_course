@@ -38,8 +38,8 @@ let message = "";
 // let secondCard = 9;
 // let sum = firstCard + secondCard;
 
-// 1. Declare a var message and assign its value as empty string
-// 2. Reassign the message var to the string we're logging out
+// 2. Create a startGame() func. Move the conditional below
+// line (44 - 55) inside the body of the function
 
 if (sum <= 20) {
     message = "Do you want to Hit?";
@@ -54,7 +54,7 @@ if (sum <= 20) {
 // Log it out!
 console.log(message);
 
-// // CASH OUT!
-// console.log(sum);
-// console.log(hasBlackjack);
-// console.log(isAlive)
+
+function startGame() {
+    console.log("Game Started!")
+}
