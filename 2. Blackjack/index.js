@@ -113,4 +113,5 @@ function startGame() {
 // I'd rather use funcs for now, and sense that's the correct path anyway,
 // so for now I'm sticking to using functions.
 
+// Stopped @ 2:11:26
 
