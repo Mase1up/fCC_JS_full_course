@@ -19,13 +19,13 @@ function dealCard() {
 
 dealCard();
 let firstCard = card;
-    console.log(firstCard)
+    // console.log(firstCard)
 dealCard();
 let secondCard = card;
-    console.log(secondCard)
-
+    // console.log(secondCard)
 let sum = firstCard + secondCard;
-    console.log(sum)
+    // console.log(sum)
+let hasBlackjack = false;
 
 // There we go!  I feel like I was supposed to find another way, because
 // at this stage we were not introduced to return...
@@ -41,7 +41,11 @@ if (sum <= 20) {
     console.log("Do you want to Hit?");
 } else if (sum === 21) {
     console.log("Blackjack!  Congratulations!");
+    hasBlackjack = true;
 } else {
     console.log("You busted, sorry!");
 }
 
+// CASH OUT!
+console.log(sum);
+console.log(hasBlackjack);
