@@ -26,7 +26,7 @@ let secondCard = card;
 let sum = firstCard + secondCard;
     // console.log(sum)
 let hasBlackjack = false;
-
+let isAlive = true;
 // There we go!  I feel like I was supposed to find another way, because
 // at this stage we were not introduced to return...
 // but it works, and that makes me happy!
@@ -44,8 +44,11 @@ if (sum <= 20) {
     hasBlackjack = true;
 } else {
     console.log("You busted, sorry!");
+    isAlive = false;
 }
 
 // CASH OUT!
 console.log(sum);
 console.log(hasBlackjack);
+
+// 1. Create var isAlive, set to true, and false if busts
