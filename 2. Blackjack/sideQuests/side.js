@@ -22,3 +22,11 @@ let age = 100;
 // if exactly 100 -> "Here is your birthday card from the King!"
 // if greater than 100, "Not elegible, you've already gotten one!"
 
+if (age < 100) {
+    console.log("Not eligible")
+} else if (age === 100) {
+    console.log("Here is your birthday card from the King!")
+} else {
+    console.log("Not eligible, you've already received one!")
+}
+
