@@ -55,6 +55,8 @@ let messageEl = document.querySelector("#message-el");
 // let sumEl = document.getElementById("sum-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
+//So he is using an array to store all the cards, then he'll set cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+let cards = [firstCard, secondCard]
 
 // There we go!  I feel like I was supposed to find another way, because
 // at this stage we were not introduced to return...
@@ -97,7 +99,7 @@ function playerHit() {
     // I'll need to expand this later, I think I can probably use a loop for i hits, or wait.... Just a function!
     // on playerHit() can just invoke the function again to keep += the total until it busts or hits 21 I think...
 
-// Adding if logic so that player cannot hit once busted or makes Blackjack
+    // Adding if logic so that player cannot hit once busted or makes Blackjack
     if (isAlive === true && hasBlackjack === false) {
         dealHitCard();
         sum += hitCard;
