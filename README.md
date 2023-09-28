@@ -1,17 +1,16 @@
-Left off at 2:17:42
+Left off at 2:44:28
 
-I need to work with how the function invokes cards and everything.  Right now when I load the page, random cards are
-generated.  Then every iteration of clicking the button loads the cards that were generated upon page loading.
+Currently have the blackjack program in a place I'm very happy.
+It starts the game, displays cards and current sum, allows you to hit,
+and will stop the game once you bust or hit blackjack.  
 
-Instead I need to move to:
-// 1. Click start button
-// 2. Generate 2 random cards
-// 3. Run the logic to display appropriate message
+Also, clicking start game will reset the game and allow you to play again.
 
+The tutorial wants me to move my cards into an array and display them from there though.  
+Currently I'm simply taking the Cards element and += hitCard onto the end, rather than
+adding hitCard to an array, then using that array as the display, but I'm guessing he's going 
+to have us populate and array, then use a loop to itterate each card inside the array into our
+cards element to teach arrays and loops.  
 
-
-Going back to do a quick rehash just to log everything in GitHub
-
-Okay, I did a ton, another 30 minutes at the PC.
-
-I'm going to try and import it into here from my Drive and update everything
+So I should probably try following the array methodology.  I want to first see how to create a fork
+because I would like to retain my original work and concept of how I was going about solving this.

@@ -30,3 +30,25 @@ if (age < 100) {
     console.log("Not eligible, you've already received one!")
 }
 
+
+// He's using the blackjack example to introduce arrays, but I don't really want to change my logic.
+// I like the solution I used and it works, so I'll follow along with his array work in here.
+
+// Array - ordered list of items
+
+let featuredPosts = [
+    "Check out my Netflix Clone", 
+    "Here's code for my project", 
+    "I've relaunched my portfolio"];
+
+let mySkills = [
+    "Over one decade in the golf industry",
+    "Groundbreaking deployment of 2023's best golf app",
+    "Incredible analytics analysis for identification of focus concepts"
+]
+
+// Make the following appear in console:
+console.log(mySkills[1]);
+console.log(mySkills[2]);
+console.log(mySkills[0]);
+
