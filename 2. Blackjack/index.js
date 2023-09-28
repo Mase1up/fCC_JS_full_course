@@ -71,6 +71,9 @@ let cardsEl = document.querySelector("#cards-el");
 
 function startGame() {
 
+    isAlive = true;
+    hasBlackjack = false;
+
     dealFirstCard();
     dealSecondCard();
     handTotal();
@@ -95,21 +98,24 @@ function playerHit() {
     // I'll need to expand this later, I think I can probably use a loop for i hits, or wait.... Just a function!
     // on playerHit() can just invoke the function again to keep += the total until it busts or hits 21 I think...
 
-    dealHitCard();
-    sum += hitCard;
+// Adding if logic so that player cannot hit once busted or makes Blackjack
+    if (isAlive === true && hasBlackjack === false) {
+        dealHitCard();
+        sum += hitCard;
 
-    if (sum <= 20) {
+         if (sum <= 20) {
         message = "Do you want to Hit?";
-    } else if (sum === 21) {
-        message = "Blackjack!  Congratulations!";
-        hasBlackjack = true;
-    } else {
-        message = "You busted, sorry!";
-        isAlive = false;
+        } else if (sum === 21) {
+            message = "Blackjack!  Congratulations!";
+            hasBlackjack = true;
+        } else {
+            message = "You busted, sorry!";
+            isAlive = false;
+        }
+        cardsEl.textContent = cardsEl.textContent + " " + hitCard;
+        sumEl.textContent = "Sum: " + sum;
+        messageEl.textContent = message;
     }
-    cardsEl.textContent = cardsEl.textContent + " " + hitCard;
-    sumEl.textContent = "Sum: " + sum;
-    messageEl.textContent = message;
 }
 
 
