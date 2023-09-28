@@ -1,4 +1,4 @@
-Left off at 2:08:40
+Left off at 2:17:42
 
 I need to work with how the function invokes cards and everything.  Right now when I load the page, random cards are
 generated.  Then every iteration of clicking the button loads the cards that were generated upon page loading.
