@@ -83,6 +83,12 @@ function startGame() {
     messageEl.textContent = message;
 }
 
+function hitCard() {
+    console.log("Player Hit");
+}
+
+
+
 // The issue I'm having is the random cards are set at page load
 // I think I need to move my random card generation INSIDE the 
 // function so that every button push generates new cards.

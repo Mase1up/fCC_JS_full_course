@@ -11,6 +11,9 @@ body {
     background-size: 230%;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -31,7 +34,8 @@ p {
     font-style: italic;
 }
 
-#start-btn {
+#start-btn,
+#hit-btn {
     width: 220px;
     height: 50px;
     font-weight: bold;
@@ -40,5 +44,6 @@ p {
     border: none;
     border-radius: 5px;
     color: rgb(0, 89, 0);
+    margin-bottom: 10px;
 }
 
