@@ -78,8 +78,8 @@ function startGame() {
     }
     console.log(firstCard);
     console.log(secondCard);
-    sumEl.innerText = "Sum: " + sum;
-    messageEl.innerText = message;
+    sumEl.textContent = "Sum: " + sum;
+    messageEl.textContent = message;
 }
 
 // The issue I'm having is the random cards are set at page load
