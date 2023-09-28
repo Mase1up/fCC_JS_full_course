@@ -45,6 +45,7 @@ function handTotal() {
 let hasBlackjack = false;
 let isAlive = true;
 let message = "";
+let messageEl = document.getElementById("message-el");
 
 // There we go!  I feel like I was supposed to find another way, because
 // at this stage we were not introduced to return...
@@ -77,7 +78,7 @@ function startGame() {
     console.log(firstCard);
     console.log(secondCard);
     console.log(sum);
-    console.log(message);
+    messageEl.innerText = message;
 }
 
 // The issue I'm having is the random cards are set at page load
