@@ -93,7 +93,6 @@ function startGame() {
 }
 
 function playerHit() {
-    console.log("Player Hit");
     // Let's add the logic now.  1. Call dealCard 2. Add card value to sum 3.Evaluate for Blackjack, Bust, or Ask if they want to Hit again
     // I'll need to expand this later, I think I can probably use a loop for i hits, or wait.... Just a function!
     // on playerHit() can just invoke the function again to keep += the total until it busts or hits 21 I think...
