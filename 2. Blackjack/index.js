@@ -48,6 +48,7 @@ let message = "";
 let messageEl = document.querySelector("#message-el");
 // let sumEl = document.getElementById("sum-el");
 let sumEl = document.querySelector("#sum-el");
+let cardsEl = document.querySelector("#cards-el");
 
 // There we go!  I feel like I was supposed to find another way, because
 // at this stage we were not introduced to return...
@@ -77,8 +78,7 @@ function startGame() {
         message = "You busted, sorry!";
         isAlive = false;
     }
-    console.log(firstCard);
-    console.log(secondCard);
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
     sumEl.textContent = "Sum: " + sum;
     messageEl.textContent = message;
 }
