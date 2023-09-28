@@ -46,6 +46,7 @@ let hasBlackjack = false;
 let isAlive = true;
 let message = "";
 let messageEl = document.getElementById("message-el");
+let sumEl = document.getElementById("sum-el");
 
 // There we go!  I feel like I was supposed to find another way, because
 // at this stage we were not introduced to return...
@@ -77,7 +78,7 @@ function startGame() {
     }
     console.log(firstCard);
     console.log(secondCard);
-    console.log(sum);
+    sumEl.innerText = "Sum: " + sum;
     messageEl.innerText = message;
 }
 
