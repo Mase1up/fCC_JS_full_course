@@ -74,3 +74,9 @@ let newMessage = "Same here!";
 
 messages.push(newMessage);
 console.log(messages);
+
+// How can you remove the last message sent?  (The last item in an array?)
+// Try to google it!  Still remembered.
+
+messages.pop();
+console.log(messages);
