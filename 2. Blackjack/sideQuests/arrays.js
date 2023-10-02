@@ -52,3 +52,12 @@ console.log(mySkills[1]);
 console.log(mySkills[2]);
 console.log(mySkills[0]);
 
+// Create an array describing yourself.  Use the three primitives we've learned,
+// your name (string), your age (number), and whether you like pizza (boolean)
+
+const myArr = [
+    "Mason",
+    40,
+    true
+];
+
