@@ -1,4 +1,5 @@
-Left off at 2:44:28
+Left off at 2:48:23
+Pushing to arrays
 
 Currently have the blackjack program in a place I'm very happy.
 It starts the game, displays cards and current sum, allows you to hit,
