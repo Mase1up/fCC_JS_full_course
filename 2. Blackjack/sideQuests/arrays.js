@@ -121,3 +121,14 @@ for (i = 0; i < cards.length; i++) {
     console.log(cards[i]);
 }
 
+let sentence = [
+    "Hello ",
+    "my ",
+    "name ",
+    "is ",
+    "Mason"
+];
+let greetingEl = document.querySelector("#greeting-el");
+
+// Render the sentence in the greeting-el para, using a for loop and .textContent
+
