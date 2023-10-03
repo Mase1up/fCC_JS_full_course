@@ -60,10 +60,11 @@ function startGame() {
 }
 
 function renderGame() {
-    isAlive === true;
-    hasBlackjack === false;   // Okay, I need to stop caring about actually utilizing the app, and just 
-                              // do the work out the way he wants it for whatever DLO there is.  I can do mine later.
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+    cardsEl.textContent = "Cards: ";
+    // Create a for loop that renders all cards instead of just two
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " ";
+    }
     sumEl.textContent = "Sum: " + sum;
     if (sum <= 20) {
         message = "Do you want to hit?";
