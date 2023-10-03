@@ -132,3 +132,6 @@ let greetingEl = document.querySelector("#greeting-el");
 
 // Render the sentence in the greeting-el para, using a for loop and .textContent
 
+for (i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += (sentence[i]);
+}
