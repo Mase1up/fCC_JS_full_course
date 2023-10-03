@@ -138,3 +138,19 @@ for (let i = 0; i < sentence.length; i++) {
 
 // Bonus, how do we keep spaces if they're not in the array?
 // Added them, but I will still have a space after the last word for now.
+
+let player1Time = 102;
+let player2Time = 107;
+
+function getFastestTime() {
+    if (player1Time < player2Time) {
+        return player1Time;
+    } else if (player2Time < player1Time) {
+        return player2Time;
+    } else {
+        return player1Time;
+    }
+}
+
+let fastestRace = getFastestTime();
+console.log(fastestRace);
