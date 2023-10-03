@@ -63,7 +63,7 @@ function renderGame() {
     isAlive === true;
     hasBlackjack === false;   // Okay, I need to stop caring about actually utilizing the app, and just 
                               // do the work out the way he wants it for whatever DLO there is.  I can do mine later.
-    cardsEl.textContent = "Cards: " + cards;
+    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
     sumEl.textContent = "Sum: " + sum;
     if (sum <= 20) {
         message = "Do you want to hit?";
@@ -74,9 +74,11 @@ function renderGame() {
         message = "You busted, sorry.";
         isAlive === false;
     }
+    messageEl.textContent = message;
 }
 
 function playerHit() {
+    if (isAlive === true && hasBlackjack === false) {
     hitCard = Math.floor(Math.random() * ((11-2)+1)+2); // Set firstCard to random num between 2-11
     cards.push(hitCard);
     cardsEl.textContent = "Cards: " + cards;
@@ -91,8 +93,12 @@ function playerHit() {
         message = "You busted, sorry.";
         isAlive === false;
     }
+    messageEl.textContent = message;
+} else {
+    message = "Would you like to start a new game?";
+    messageEl.textContent = message;
 }
-
+}
 
 
 
