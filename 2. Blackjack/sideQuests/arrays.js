@@ -81,3 +81,21 @@ console.log(messages);
 messages.pop();
 console.log(messages);
 
+// Count to ten!
+// Yep, here's the intro to for loops
+// Where do we start, where is the FINISH?, What's the step size?
+
+//   START      FINISH  STEP SIZE
+for (let i = 10; i <= 20; i++) {
+    console.log(i);
+}
+
+// Next loop work
+// Count from 10 to 100 in steps of 10
+
+for (let i = 10; i < 101; i+= 10) {
+    console.log(i)
+}
+
+
+
