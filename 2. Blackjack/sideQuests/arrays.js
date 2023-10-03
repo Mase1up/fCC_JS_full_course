@@ -122,16 +122,19 @@ for (i = 0; i < cards.length; i++) {
 }
 
 let sentence = [
-    "Hello ",
-    "my ",
-    "name ",
-    "is ",
+    "Hello",
+    "my",
+    "name",
+    "is",
     "Mason"
 ];
 let greetingEl = document.querySelector("#greeting-el");
 
 // Render the sentence in the greeting-el para, using a for loop and .textContent
 
-for (i = 0; i < sentence.length; i++) {
-    greetingEl.textContent += (sentence[i]);
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += (sentence[i] + " ");
 }
+
+// Bonus, how do we keep spaces if they're not in the array?
+// Added them, but I will still have a space after the last word for now.
