@@ -64,22 +64,22 @@ const myArr = [
 // Imagine you're building a chat application.  Pretend each message is an item in the array.  When someone types a new message,
 // want to push newMessage into the messages array, and then log out the array.
 
-let messages = [
-    "Hey, how's it going?",
-    "I'm great, thank you!  How about you?",
-    "All good.  Been working on my portfolio lately."
-];
+// let messages = [
+//     "Hey, how's it going?",
+//     "I'm great, thank you!  How about you?",
+//     "All good.  Been working on my portfolio lately."
+// ];
 
-let newMessage = "Same here!";
+// let newMessage = "Same here!";
 
-messages.push(newMessage);
-console.log(messages);
+// messages.push(newMessage);
+// console.log(messages);
 
-// How can you remove the last message sent?  (The last item in an array?)
-// Try to google it!  Still remembered.
+// // How can you remove the last message sent?  (The last item in an array?)
+// // Try to google it!  Still remembered.
 
-messages.pop();
-console.log(messages);
+// messages.pop();
+// console.log(messages);
 
 // Count to ten!
 // Yep, here's the intro to for loops
@@ -97,5 +97,27 @@ for (let i = 10; i < 101; i+= 10) {
     console.log(i)
 }
 
+let messages = [
+    "Hey, how's it going?",
+    "I'm great, thank you!  How about you?",
+    "All good.  Been working on my portfolio lately.",
+    "Same here!"
+]
 
+// DRY - Don't Repeat Yourself
+// console.log(messages[0]);
+// console.log(messages[1]);
+// console.log(messages[2]);
+// console.log(messages[3]);
+
+for (i = 0; i < messages.length; i++) {
+    console.log(messages[i]);
+}
+
+let cards = [7, 3, 9]
+// Create a for loop that will log out all the cards, using cards.length to determine how long loop should run
+
+for (i = 0; i < cards.length; i++) {
+    console.log(cards[i]);
+}
 
