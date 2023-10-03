@@ -79,27 +79,12 @@ function renderGame() {
 }
 
 function playerHit() {
-    if (isAlive === true && hasBlackjack === false) {
     hitCard = Math.floor(Math.random() * ((11-2)+1)+2); // Set firstCard to random num between 2-11
-    cards.push(hitCard);
-    cardsEl.textContent = "Cards: " + cards;
     sum += hitCard;
-    sumEl.textContent = "Sum: " + sum;
-    if (sum <= 20) {
-        message = "Do you want to hit?";
-    } else if (sum === 21) {
-        message = "Blackjack!  Congratulations!";
-        hasBlackjack === true;
-    } else {
-        message = "You busted, sorry.";
-        isAlive === false;
-    }
-    messageEl.textContent = message;
-} else {
-    message = "Would you like to start a new game?";
-    messageEl.textContent = message;
-}
-}
+    cards.push(hitCard);
+    renderGame();
+} 
+
 
 
 
