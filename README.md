@@ -1,5 +1,9 @@
-Left off at 2:48:23
-Pushing to arrays
+Left off at 2:51:10
+Pushing to arrays.  I created a new file to work with arrays.  I need to really just follow the lead of this project,
+because I was working to create the logic my way that made the game function as you'd expect, but I was doing it with 
+several functions.  I have to reign it in for now, and just follow along to meet the DLO's.
+
+
 
 Currently have the blackjack program in a place I'm very happy.
 It starts the game, displays cards and current sum, allows you to hit,
