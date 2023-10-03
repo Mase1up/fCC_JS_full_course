@@ -85,7 +85,8 @@ function playerHit() {
     renderGame();
 } 
 
-
+// Omg, now he's going to create a function JUST like I did and use a dealCard() function
+// Okay, well let's see how he goes through it all...
 
 
 
