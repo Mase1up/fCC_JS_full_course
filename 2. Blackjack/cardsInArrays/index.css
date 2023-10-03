@@ -9,7 +9,7 @@ body {
     text-align: center;
     background-image: url(table.png);
     background-size: 230%;
-    color: white;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
