@@ -232,4 +232,4 @@ console.log(randomDice);
         // THEN ADD the smallest amount you want, because it will always default to a value of 0 being the smallest
 
 // So this would be rewritten as: 
-// randomCard = (Math.floor( Math.random() * (max - min)) + min )
+// randomCard = Math.floor( Math.random() * ((max - min)+1) + min )
