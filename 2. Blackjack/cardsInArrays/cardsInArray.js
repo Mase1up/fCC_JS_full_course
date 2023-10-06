@@ -56,7 +56,9 @@ let cardsEl = document.querySelector("#cards-el");
 let cards = [firstCard, secondCard]
 
 function getRandomCard() {
-    return Math.floor(Math.random() * ((11-2)+1)+2); 
+    let max = 11;   // Return random value between 2 and 11 inclusive
+    let min = 2;
+    return Math.floor(Math.random() * ((max-min)+1)+min); 
 }
 
 
