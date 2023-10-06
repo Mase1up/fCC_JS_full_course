@@ -168,3 +168,33 @@ function totalRaceTime() {
 let totalTime = totalRaceTime();
 console.log(totalTime);
 
+
+// Math.random() function overview
+
+let randomNumber = Math.random() * 6;
+console.log(randomNumber);
+
+
+/*  
+
+What do you think Math.random() does?
+Returns a random value between 0 and 1 to a TON of decimal places
+
+So the caveat, is that it CANNOT ever reach 1.  It's 0 to lim -> 1
+Now we'll multiply Math.random by 6.  What range is our randomNumber in now?  Answer: 0 to lim -> 6
+
+*/
+
+// Now let's look at Math.floor()
+
+let flooredNumber = Math.floor(-3.45632);
+console.log(flooredNumber);
+
+/*
+
+What does Math.floor() do to positive numbers?
+
+Your answer: If not an integer, sets the value to the next integer to the left of given number's value on the number line
+             For example 3.456 would move left to 3, -3.456 would move left to -4.
+
+*/
