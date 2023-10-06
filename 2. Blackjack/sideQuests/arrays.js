@@ -226,7 +226,7 @@ console.log(randomDice);
 // 1-13 would be 0-12 + 1
 // 2-11 would be 0-9 + 2
 
-// randomCard = (Math.floor( Math.random() * (9)) + 2 )
+// randomCard = (Math.floor( Math.random() * (9)+1) + 2 )
 // It just so happens that this will always have the 'max' variable = biggest number you want MINUS the smallest you want returned
         // In this case, this would be 11-2 = 9 as the biggest value spat out by the Math.floor function
         // THEN ADD the smallest amount you want, because it will always default to a value of 0 being the smallest
