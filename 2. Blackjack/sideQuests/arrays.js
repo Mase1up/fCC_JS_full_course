@@ -171,8 +171,8 @@ console.log(totalTime);
 
 // Math.random() function overview
 
-let randomNumber = Math.random() * 6;
-console.log(randomNumber);
+// let randomNumber = Math.random() * 6;
+// console.log(randomNumber);
 
 
 /*  
@@ -198,3 +198,17 @@ Your answer: If not an integer, sets the value to the next integer to the left o
              For example 3.456 would move left to 3, -3.456 would move left to -4.
 
 */
+
+// Knowing these two things, use Math.random() and Math.floor() to create a die
+
+let max = 6;
+let randomNumber = (Math.floor( Math.random() * (max)) + 1 );
+console.log(randomNumber);
+
+// So this should return an integer between 0-5, need to multiply * 7 to get a Math.floor() return of 6.
+// Instead of multiplying by 7, I took the 6 we wanted to include, set it as a variable 'max' and then added one, multiplying by that sum
+
+// Yep, this is giving a result between 0 - 6
+// So I have to figure out how to bump up the minimum value....
+// There we go!  Move where the 1 is added!  Now the Math.floor() returns 0-5, I add 1 after so the new range = 1-6
+
