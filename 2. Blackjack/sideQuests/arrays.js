@@ -139,6 +139,8 @@ for (let i = 0; i < sentence.length; i++) {
 // Bonus, how do we keep spaces if they're not in the array?
 // Added them, but I will still have a space after the last word for now.
 
+
+
 let player1Time = 102;
 let player2Time = 107;
 
@@ -148,9 +150,21 @@ function getFastestTime() {
     } else if (player2Time < player1Time) {
         return player2Time;
     } else {
-        return player1Time;
+        return "It was a tie with a time of " + player1Time;
     }
 }
 
 let fastestRace = getFastestTime();
 console.log(fastestRace);
+
+// Write a function that returns total race time
+// Call/invoke the function and store returned value in new variable
+// Finally, log the variable out
+
+function totalRaceTime() {
+    return /* combinedTime = */ player1Time + player2Time;  //; Can simply return the values, because I'm about to log it into a variable.  
+}                                                          // I'm pretty sure if I kept it my way, I could've then simply console.log(combinedTime);
+                                                           // Yes, that works too, once I was invoking the function (I'd commented it out at first)
+let totalTime = totalRaceTime();
+console.log(totalTime);
+
