@@ -42,8 +42,8 @@
 //     return hitCard = card;
 // }
 
-let firstCard = Math.floor(Math.random() * ((11-2)+1)+2); // Set firstCard to random num between 2-11
-let secondCard = Math.floor(Math.random() * ((11-2)+1)+2); // Same for secondCard
+let firstCard = getRandomCard(); // Set firstCard to random num between 2-11
+let secondCard = getRandomCard(); // Same for secondCard
 let sum = firstCard + secondCard;
 let hasBlackjack = false;
 let isAlive = true;
@@ -54,6 +54,11 @@ let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 //So he is using an array to store all the cards, then he'll set cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
 let cards = [firstCard, secondCard]
+
+function getRandomCard() {
+    return Math.floor(Math.random() * ((11-2)+1)+2); 
+}
+
 
 function startGame() {
     renderGame();
@@ -79,7 +84,7 @@ function renderGame() {
 }
 
 function playerHit() {
-    hitCard = Math.floor(Math.random() * ((11-2)+1)+2); // Set firstCard to random num between 2-11
+    hitCard = getRandomCard(); // Set firstCard to random num between 2-11
     sum += hitCard;
     cards.push(hitCard);
     renderGame();
