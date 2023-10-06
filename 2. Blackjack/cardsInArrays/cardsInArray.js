@@ -42,18 +42,18 @@
 //     return hitCard = card;
 // }
 
-let firstCard = getRandomCard(); // Set firstCard to random num between 2-11
-let secondCard = getRandomCard(); // Same for secondCard
-let sum = firstCard + secondCard;
+let firstCard; 
+let secondCard; 
+let sum = 0;
 let hasBlackjack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 let messageEl = document.querySelector("#message-el");
 // let sumEl = document.getElementById("sum-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 //So he is using an array to store all the cards, then he'll set cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
-let cards = [firstCard, secondCard]
+let cards = [];
 
 function getRandomCard() {
     let max = 11;   // Return random value between 2 and 11 inclusive
@@ -63,11 +63,18 @@ function getRandomCard() {
 
 
 function startGame() {
+    isAlive = true;
+    hasBlackjack = false;
+    firstCard = getRandomCard();
+    secondCard = getRandomCard();
+    sum = 0;
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
     renderGame();
 }
 
 function renderGame() {
-    cardsEl.textContent = "Cards: ";
+    cardsEl.textContent = "Cards: ";  
     // Create a for loop that renders all cards instead of just two
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " ";
@@ -77,19 +84,21 @@ function renderGame() {
         message = "Do you want to hit?";
     } else if (sum === 21) {
         message = "Blackjack!  Congratulations!";
-        hasBlackjack === true;
+        hasBlackjack = true;
     } else {
         message = "You busted, sorry.";
-        isAlive === false;
+        isAlive = false;
     }
     messageEl.textContent = message;
 }
 
 function playerHit() {
-    hitCard = getRandomCard(); // Set firstCard to random num between 2-11
-    sum += hitCard;
-    cards.push(hitCard);
-    renderGame();
+    if (isAlive === true && hasBlackjack === false) {
+        let hitCard = getRandomCard(); // Set firstCard to random num between 2-11
+        sum += hitCard;
+        cards.push(hitCard);
+        renderGame();
+    }
 } 
 
 // Omg, now he's going to create a function JUST like I did and use a dealCard() function
