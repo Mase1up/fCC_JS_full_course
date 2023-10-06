@@ -212,3 +212,12 @@ console.log(randomNumber);
 // So I have to figure out how to bump up the minimum value....
 // There we go!  Move where the 1 is added!  Now the Math.floor() returns 0-5, I add 1 after so the new range = 1-6
 
+// Last piece: Create a function, rollDice() that returns a random number between 1-6
+
+function rollDice() {
+    let max = 6;
+    return randomDice = (Math.floor( Math.random() * (max)) + 1 );
+}
+
+rollDice();
+console.log(randomDice);
