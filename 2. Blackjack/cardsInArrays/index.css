@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-background-color: rgb(52, 52, 68);
+    --header-text-color: goldenrod;
+    --secondary-text-color: linen;
+    --button-background-color: goldenrod;
+    --button-text-color: rgb(52, 52, 68);
+}
+
 body {
     margin: 10px;
     text-align: center;
     background-image: url(table.png);
     background-size: 230%;
-    color: black;
+    background-color: var(--main-background-color);
+    color: var(--secondary-text-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -17,7 +26,7 @@ body {
 }
 
 h1 {
-    color: goldenrod;
+    color: var(--header-text-color);
     margin-bottom: 40px;
     margin-top: 30px;
     font-size: 4rem;
@@ -40,10 +49,10 @@ p {
     height: 50px;
     font-weight: bold;
     font-size: 1.5rem;
-    background-color: goldenrod;
+    background-color: var(--button-background-color);
     border: none;
     border-radius: 5px;
-    color: rgb(0, 89, 0);
+    color: var(--button-text-color);
     margin-bottom: 10px;
 }
 
