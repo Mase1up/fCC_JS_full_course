@@ -52,8 +52,16 @@ let messageEl = document.querySelector("#message-el");
 // let sumEl = document.getElementById("sum-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
-//So he is using an array to store all the cards, then he'll set cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+let playerEl = document.querySelector("#player-el");
+//So he's using an array to store all the cards, then he'll set cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
 let cards = [];
+
+let player = {
+    name: "Mason",
+    chips: 1000
+}
+
+playerEl.textContent = player.name + ": $" + player.chips;
 
 function getRandomCard() {
     let max = 11;   // Return random value between 2 and 11 inclusive
@@ -68,7 +76,7 @@ function startGame() {
     firstCard = getRandomCard();
     secondCard = getRandomCard();
     sum = 0;
-    cards = [firstCard, secondCard];
+    cards = [firstCard, secondCard];  // I thought I learned you can't do this, but maybe because we usually declare const = []
     sum = firstCard + secondCard;
     renderGame();
 }
