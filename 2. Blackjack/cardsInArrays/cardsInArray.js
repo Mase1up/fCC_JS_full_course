@@ -58,8 +58,13 @@ let cards = [];
 
 let player = {
     name: "Mason",
-    chips: 1000
+    chips: 1000,
+    sayHello: function(){           // We can attach a function to an object, and 
+        console.log("Heissan!");    // we call this a method.  console.log()
+    }                               // Math.random(), player.sayHello()... these are all methods
 }
+
+player.sayHello();
 
 playerEl.textContent = player.name + ": $" + player.chips;
 
