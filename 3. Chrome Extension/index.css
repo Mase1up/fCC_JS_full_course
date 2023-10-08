@@ -24,6 +24,7 @@ body {
 #input-el {
     height: 40px;
     border: var(--main-color) 1px solid;
+    padding: 10px;  /* Get the cursor away from the edge */
 }
 
 #input-btn {
