@@ -4,3 +4,34 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: rgb(123, 161, 123);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    /* border: red 1px solid; */
+}
+
+#input-el {
+    height: 40px;
+    border: var(--main-color) 1px solid;
+}
+
+#input-btn {
+    height: 40px;
+    width: 130px;
+    margin-top: 5px;
+    font-weight:bold;
+    font-size: .95rem;
+    background-color: var(--main-color);
+    border: none;
+    color: linen;
+}
