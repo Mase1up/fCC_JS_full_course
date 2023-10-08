@@ -49,7 +49,7 @@ console.log(discount);  // I struggled here because it wasn't in a function.  I 
 
 // For loops
 
-let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+// let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
 
 /* Use a for loop to log the following to the console:
 
@@ -61,10 +61,54 @@ The 5 largest countries in the world:
 -Pakistan
 */
 
-console.log("The 5 largest countries in the world:");
-for (let i = 0; i < largeCountries.length; i++) {
-    console.log("-" + largeCountries[i]);
-}
+// console.log("The 5 largest countries in the world:");
+// for (let i = 0; i < largeCountries.length; i++) {
+//     console.log("-" + largeCountries[i]);
+// }
 
 // Stopped at 4:22:16
+
+let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"];
+
+// You need to fix the largeCountries array so that
+// China and Pakistan are added back to their respective places
+
+// Use push() and pop() along with their counterparts shift() and unshift()
+// Google how to use unshift() and shift()
+
+largeCountries.unshift();
+largeCountries.unshift('China');
+largeCountries.pop();
+largeCountries.push('Pakistan');
+
+console.log(largeCountries);
+
+
+// If it is Friday the 13th, log out spooky face
+// Use the logical "AND operator"
+
+let dayofMonth = 13;
+let dayofWeek = 'Friday';
+
+if (dayofMonth === 13 && dayofWeek === 'Friday') {
+    console.log('Spooky face inserted here');
+}
+
+
+// Practice random numbers with Rock, Paper, Scissors
+// Create a function that returns a rancom item from the array
+
+let hands = ['Rock', 'Paper', 'Scissors'];
+
+function startGame() {
+    let randomChoice = Math.floor(Math.random() * 3); // This will give me 0-2 which is perfect for my array items
+    return hands[randomChoice];
+}
+
+
+console.log(startGame());  // This is a little confusing to me, that invoking a function that returns something logs out the return...
+
+// That just doesn't make sense to me....I'll have to find the right way to understand why that occurs
+
+
 
