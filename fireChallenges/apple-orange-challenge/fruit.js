@@ -1,4 +1,4 @@
-let fruit = ['apple', 'orange', 'apple', 'apple', 'orange'];
+let fruit = ['🍎', '🍊', '🍎', '🍎', '🍊'];
 let appleShelf = document.getElementById('apple-shelf');
 let orangeShelf = document.getElementById('orange-shelf');
 
@@ -7,10 +7,10 @@ let orangeShelf = document.getElementById('orange-shelf');
 // going to iterate through, and if apple -> appleShelf, if orange -> orangeShelf
 
 for (let i = 0; i < fruit.length; i++) {
-    if (fruit[i] === 'apple') {
-        appleShelf.textContent += 'apple';
-    } else if (fruit[i] === 'orange') {
-        orangeShelf += 'orange';
+    if (fruit[i] === '🍎') {
+        appleShelf.textContent += '🍎 ';
+    } else if (fruit[i] === '🍊') {
+        orangeShelf += '🍊 ';
     } else {
         console.log("This was not an apple or orange")
     }
