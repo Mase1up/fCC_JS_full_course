@@ -2,9 +2,10 @@ let myLeads = [];
 const inputEl = document.querySelector("#input-el");
 const inputBtn = document.querySelector('#input-btn');
 
-// Push the value "www.awesomelead.com" to myArray when input button is clicked
+// Push the value from the input element into myLeads array
+// Google -> how to get value from input field
 
 inputBtn.addEventListener("click", function() {
-    myLeads.push("www.awesomelead.com");
+    myLeads.push(inputEl.value);
     console.log(myLeads);
 })
