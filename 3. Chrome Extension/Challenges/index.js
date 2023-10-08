@@ -11,3 +11,4 @@ box.addEventListener("click", function() {
 // Nailed it!
 
 
+// if possible, use const.  If not, use let
