@@ -6,6 +6,8 @@ let orangeShelf = document.getElementById('orange-shelf');
 // and the oranges onto the orangeShelf.
 // going to iterate through, and if apple -> appleShelf, if orange -> orangeShelf
 
+// Forgot it was supposed to be a function
+function sortFruit(){
 for (let i = 0; i < fruit.length; i++) {
     if (fruit[i] === '🍎') {
         appleShelf.textContent += '🍎';
@@ -14,4 +16,5 @@ for (let i = 0; i < fruit.length; i++) {
     } else {
         console.log("This was not an apple or orange")
     }
-};
+}
+}
