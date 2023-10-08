@@ -5,12 +5,13 @@
 }
 
 :root {
-    --main-color: rgb(123, 161, 123);
+    --main-color: #5f9341;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 .input-container {
