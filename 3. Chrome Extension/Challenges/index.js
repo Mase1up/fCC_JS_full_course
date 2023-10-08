@@ -2,5 +2,5 @@
 
 const divContainer = document.querySelector("#container");
 
-divContainer.innerHTML = "<button>" + "Buy!" + "<button>";
+divContainer.innerHTML = "<button>Buy!</button>";
 
