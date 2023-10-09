@@ -8,8 +8,13 @@ inputBtn.addEventListener("click", function() {
     console.log(myLeads);
 })
 
-// Render the leads into the ul instead of logging
+// Let's try a different method!
 for (let i = 0; i < myLeads.length; i++) {
     ulEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+    // create element
+    // set text content
+    // append to ul
+// const li = document.createElement("li");
+// li.textContent = myLeads[i];
+// ulEl.append(li);                     Okay, that worked, but we're going back to the original method
 }
-
