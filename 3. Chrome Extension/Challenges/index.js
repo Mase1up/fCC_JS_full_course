@@ -10,3 +10,4 @@ divContainer.innerHTML = "<button onclick='buy()'>Buy!</button>";
 function buy() {
     divContainer.innerHTML += "<p>Thank you for buying!</p>";
 }
+

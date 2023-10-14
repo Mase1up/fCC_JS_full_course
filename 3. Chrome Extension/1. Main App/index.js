@@ -17,4 +17,20 @@ function renderLeads() {
         listItems += "<li>" + myLeads[i] + "</li>";
     }
     ulEl.innerHTML = listItems;
+
+    // So his version, you can omit setting the listItems variable altogether;
+    // function renderLeads() {
+    //     for( let i = 0; i < myLeads.length; i++) {
+    //         ulEl.innerHTML += "<li>" + myLeads[i] = "</li>";
+    //     }
+    // }
+
+
+    // Alternatively, you can use a second method completely
+    //
+    //      for (let i = 0; i < myLeads.length; i++) {
+    //          const li = document.createElement("li");
+    //          li.textContent = myLeads[i];
+    //          ulEl.append(li);
+    //}
 }
