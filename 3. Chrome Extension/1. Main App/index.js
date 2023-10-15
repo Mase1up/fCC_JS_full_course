@@ -17,7 +17,7 @@ function renderLeads() {
         listItems += "<li>" + myLeads[i] + "</li>";
     }
     ulEl.innerHTML = listItems;
-
+}
     // So his version, you can omit setting the listItems variable altogether;
     // function renderLeads() {
     //     for( let i = 0; i < myLeads.length; i++) {
@@ -33,4 +33,9 @@ function renderLeads() {
     //          li.textContent = myLeads[i];
     //          ulEl.append(li);
     //}
-}
+
+
+// You have to be kidding me.... After ALLLLL that, he wants us to do the code EXACTLY
+// as I originally did it, creating a listItems variable, adding each <li> to it, then after the
+// loop, set ulEl = listItems;
+
