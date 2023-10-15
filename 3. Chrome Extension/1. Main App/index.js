@@ -12,9 +12,9 @@ inputBtn.addEventListener("click", function() {
 function renderLeads() {
     let listItems = "";
     for (let i = 0; i < myLeads.length; i++) {
-        // Make the <li> a link to the site and open in a new tab
-        // <li><a href="https://www.mason-keith.com" target="_blank">www.mason-keith.com</a></li>
-        listItems += "<li>" + '<a href="https://' + myLeads[i] +'" ' + 'target="_blank">' + myLeads[i] + "</a></li>";
+        // Going to use a template string
+        // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>";
+        listItems += `<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>`;
     }
     ulEl.innerHTML = listItems;
 }
