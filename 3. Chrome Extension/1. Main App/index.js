@@ -14,7 +14,7 @@ function renderLeads() {
     for (let i = 0; i < myLeads.length; i++) {
         // Make the <li> a link to the site and open in a new tab
         // <li><a href="https://www.mason-keith.com" target="_blank">www.mason-keith.com</a></li>
-        listItems += "<li>" + myLeads[i] + "</li>";
+        listItems += "<li>" + '<a href="https://' + myLeads[i] +'" ' + 'target="_blank">' + myLeads[i] + "</a></li>";
     }
     ulEl.innerHTML = listItems;
 }
