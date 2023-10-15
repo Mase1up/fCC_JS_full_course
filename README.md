@@ -1,4 +1,4 @@
-Left off at 5:20:19;
+Left off at 5:37:12;
 
 About to create a random card function, then use that function to create card vars that fill the array.
 Very similar approach to what I initially ran, but utilizing arrays and for loops as I'd expected.
