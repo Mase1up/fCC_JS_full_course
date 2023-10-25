@@ -47,3 +47,7 @@ body {
 #ul-el a {
     color: var(--main-color);
 }
+
+#ul-el li {
+    margin-bottom: 3px;
+}
