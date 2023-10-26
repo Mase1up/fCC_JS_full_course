@@ -3,12 +3,25 @@ const inputEl = document.querySelector("#input-el");
 const inputBtn = document.querySelector('#input-btn');
 const ulEl = document.querySelector('#ul-el');
 
-localStorage.setItem("myLeads", "www.example-lead.com");
+// Get the leads from the localStorage
+// Store it in a variable, leadsFromLocalStorage
+leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+// Log out the variable
+console.log(leadsFromLocalStorage);
+
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
     inputEl.value = "";
+    // Save the myLeads array to loacalStorage
+    // P.S. remember JSON.stringify()
+                                                                //myLeads = JSON.stringify(myLeads);        // This works, but it was accomplished inline
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));   //localStorage.setItem("myLeads", myLeads); // as shown to the left.
+                                                                //myLeads = JSON.parse(myLeads);
     renderLeads();
+
+    // To verify that it works:
+    console.log( localStorage.getItem("myLeads"));
 })
 
 function renderLeads() {
