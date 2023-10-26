@@ -3,11 +3,16 @@ const inputEl = document.querySelector("#input-el");
 const inputBtn = document.querySelector('#input-btn');
 const ulEl = document.querySelector('#ul-el');
 
-// Get the leads from the localStorage
-// Store it in a variable, leadsFromLocalStorage
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
-// Log out the variable
-console.log(leadsFromLocalStorage);
+
+// 1. Check if leadsFromLocalStorage is truthy
+// 2. If so, set myLeads to its value and call renderLeads()
+
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage;
+    renderLeads();
+}
+
 
 
 inputBtn.addEventListener("click", function() {
