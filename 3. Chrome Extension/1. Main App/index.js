@@ -31,7 +31,7 @@ inputBtn.addEventListener("click", function() {
 })
 
 deleteBtn.addEventListener("dblclick", function() {
-    localStorage.clear;
+    localStorage.clear();
     myLeads = [];
     renderLeads();
 })
