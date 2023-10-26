@@ -5,7 +5,7 @@ const ulEl = document.querySelector('#ul-el');
 
 // Get the leads from the localStorage
 // Store it in a variable, leadsFromLocalStorage
-leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 // Log out the variable
 console.log(leadsFromLocalStorage);
 
@@ -17,7 +17,7 @@ inputBtn.addEventListener("click", function() {
     // P.S. remember JSON.stringify()
                                                                 //myLeads = JSON.stringify(myLeads);        // This works, but it was accomplished inline
     localStorage.setItem("myLeads", JSON.stringify(myLeads));   //localStorage.setItem("myLeads", myLeads); // as shown to the left.
-                                                                //myLeads = JSON.parse(myLeads);
+                                                                //myLeads = JSON.parse(myLeads);            //
     renderLeads();
 
     // To verify that it works:
