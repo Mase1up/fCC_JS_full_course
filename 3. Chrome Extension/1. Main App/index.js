@@ -2,6 +2,7 @@ let myLeads = [];
 const inputEl = document.querySelector("#input-el");
 const inputBtn = document.querySelector('#input-btn');
 const ulEl = document.querySelector('#ul-el');
+const deleteBtn = document.querySelector('#delete-btn');
 
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
@@ -27,6 +28,12 @@ inputBtn.addEventListener("click", function() {
 
     // To verify that it works:
     console.log( localStorage.getItem("myLeads"));
+})
+
+deleteBtn.addEventListener("click", function() {
+    localStorage.clear;
+    myLeads = [];
+    renderLeads();
 })
 
 function renderLeads() {
