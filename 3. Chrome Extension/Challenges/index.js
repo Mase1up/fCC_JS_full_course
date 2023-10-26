@@ -27,3 +27,32 @@ Cheers,
 ${sender}`;
 
 console.log(email);
+
+
+const credits = 0;
+
+if (credits) {
+    console.log("Let's play!")   
+} else {
+    console.log("Sorry, you're out of credits")
+}
+
+// truthy
+// falsy
+
+// false
+// 0
+// ""
+// null -> How you as a developer signal emptiness
+// undefined -> How JavaScript signals emptiness
+// NaN
+
+let currentViewers = null;
+
+currentViewers = ["jane", "john"]
+currentViewers = null;
+
+if (currentViewers) {
+    // do something, like notify the streamer people are in their lobby
+    console.log("We have viewers");
+}
