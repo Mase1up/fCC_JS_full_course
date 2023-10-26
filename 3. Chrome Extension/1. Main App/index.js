@@ -30,7 +30,7 @@ inputBtn.addEventListener("click", function() {
     console.log( localStorage.getItem("myLeads"));
 })
 
-deleteBtn.addEventListener("click", function() {
+deleteBtn.addEventListener("dblclick", function() {
     localStorage.clear;
     myLeads = [];
     renderLeads();
