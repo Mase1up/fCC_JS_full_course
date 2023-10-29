@@ -1,4 +1,6 @@
-Left off at 6:35:11;
+Left off at 6:37:23;
+
+Too tired to actually learn anything
 
 Next is:
 
