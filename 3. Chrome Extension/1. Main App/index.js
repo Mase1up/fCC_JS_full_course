@@ -14,7 +14,22 @@ if (leadsFromLocalStorage) {
     renderLeads();
 }
 
-
+function renderLeads() {
+    let listItems = "";
+    for (let i = 0; i < myLeads.length; i++) {
+        // Going to use a template string
+        // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>";
+        listItems +=
+        `
+            <li>
+                <a target="_blank" href="https://${myLeads[i]}">
+                ${myLeads[i]}
+                </a>
+            </li>
+        `;
+    }
+    ulEl.innerHTML = listItems;
+}
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
@@ -36,19 +51,4 @@ deleteBtn.addEventListener("dblclick", function() {
     renderLeads();
 })
 
-function renderLeads() {
-    let listItems = "";
-    for (let i = 0; i < myLeads.length; i++) {
-        // Going to use a template string
-        // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>";
-        listItems +=
-        `
-            <li>
-                <a target="_blank" href="https://${myLeads[i]}">
-                ${myLeads[i]}
-                </a>
-            </li>
-        `;
-    }
-    ulEl.innerHTML = listItems;
-}
+
