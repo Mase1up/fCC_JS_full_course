@@ -56,3 +56,14 @@ if (currentViewers) {
     // do something, like notify the streamer people are in their lobby
     console.log("We have viewers");
 }
+
+
+// Write your first function parameter
+
+const welcomeEl = document.getElementById("welcome-el");
+
+function greetUser(greeting, name) {
+    welcomeEl.textContent = greeting + name +"!";
+}
+
+greetUser("Hello again ", "Ethan");
