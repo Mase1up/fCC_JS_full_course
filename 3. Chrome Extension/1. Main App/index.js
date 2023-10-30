@@ -1,4 +1,5 @@
 let myLeads = [];
+let oldLeads = [];
 const inputEl = document.querySelector("#input-el");
 const inputBtn = document.querySelector('#input-btn');
 const ulEl = document.querySelector('#ul-el');
@@ -11,19 +12,19 @@ let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage;
-    renderLeads();
+    render(myLeads);
 }
 
-function renderLeads() {
+function render(leads) {
     let listItems = "";
-    for (let i = 0; i < myLeads.length; i++) {
+    for (let i = 0; i < leads.length; i++) {
         // Going to use a template string
         // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>";
         listItems +=
         `
             <li>
-                <a target="_blank" href="https://${myLeads[i]}">
-                ${myLeads[i]}
+                <a target="_blank" href="https://${leads.[i]}">
+                ${leads.[i]}
                 </a>
             </li>
         `;
@@ -39,7 +40,7 @@ inputBtn.addEventListener("click", function() {
                                                                 //myLeads = JSON.stringify(myLeads);        // This works, but it was accomplished inline
     localStorage.setItem("myLeads", JSON.stringify(myLeads));   //localStorage.setItem("myLeads", myLeads); // as shown to the left.
                                                                 //myLeads = JSON.parse(myLeads);            //
-    renderLeads();
+    render(myLeads);
 
     // To verify that it works:
     console.log( localStorage.getItem("myLeads"));
@@ -48,7 +49,7 @@ inputBtn.addEventListener("click", function() {
 deleteBtn.addEventListener("dblclick", function() {
     localStorage.clear();
     myLeads = [];
-    renderLeads();
+    render(myLeads);
 })
 
 
