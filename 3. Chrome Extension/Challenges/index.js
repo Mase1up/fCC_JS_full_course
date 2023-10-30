@@ -62,8 +62,18 @@ if (currentViewers) {
 
 const welcomeEl = document.getElementById("welcome-el");
 
-function greetUser(greeting, name) {
-    welcomeEl.textContent = greeting + name +"!";
+function greetUser(greeting, name, emoji) {
+    welcomeEl.textContent = `${greeting} ${name}! ${emoji}`;
 }
 
-greetUser("Hello again ", "Ethan");
+greetUser("Hello again", "Ethan", '👹');
+
+
+// Create a function that accepts two arguments, adds them, and displays the sum
+
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+console.log( add(3,4));
+console.log( add(9, 102));
